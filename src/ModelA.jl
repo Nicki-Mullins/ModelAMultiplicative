@@ -1,8 +1,8 @@
 # ModelA.jl
 #
 # Functions to simulate model A with the Metropolis algorithm
-# H[φ] = Σ_x [ 1/2 (∇φ)^2 + m²/2 φ² + λ/4 φ⁴ ]
-# Nonlinear relaxation rate is used, GammaA = GammaA0 + GammaA2 phi^2
+# H[φ] = Σ_x [ 1/2 (∇φ)^2 + m²/2 φ² + λ/4 φ⁴ - h φ ]
+# Nonlinear relaxation rate is used, GammaA = Gamma0 + Gamma2 phi^2
 
 const lambd = 4.0
 const GammaA0 = 1.0

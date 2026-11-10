@@ -16,7 +16,7 @@ using Printf
 using Random
 using Statistics
 
-include("ModelA.jl")
+include(joinpath(@__DIR__, "..", "src", "ModelA.jl"))
 
 # Constant-Gamma update, used only to prepare the exp(-H) ensemble.
 function reference_update(phi::Array{Float64,3}, h::Float64, dt::Float64, L::Int,

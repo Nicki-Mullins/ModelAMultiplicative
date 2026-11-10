@@ -18,7 +18,7 @@ using Printf
 using Random
 using Statistics
 
-include("ModelA.jl")
+include(joinpath(@__DIR__, "..", "src", "ModelA.jl"))
 
 stderr_of(values) = std(values) / sqrt(length(values))
 
